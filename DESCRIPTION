@@ -1,0 +1,21 @@
+Package: finddatasetpkgs
+Type: Package
+Title: Get Packages With Datasets
+Version: 0.0.1
+Author: Richard Cotton
+Maintainer: Richard Cotton <richierocks@gmail.com>
+Description: List all CRAN R packages with "datasets" or "data sets" in the
+    Title field of their DESCRIPTION file.
+Imports: 
+    knitr,
+    magrittr,
+    rvest,
+    stats,
+    stringr,
+    utils,
+    withr,
+    xml2
+License: Unlimited
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
