@@ -1,0 +1,39 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# finddatasetpkgs
+
+*finddatasetpkgs* helps you find other R packages that contain datasets. At the moment, it is pretty stupid, and just looks in the Title field of the DESCRIPTION file of each package on CRAN, and checks if it contains "dataset" or "data set".
+
+## Example
+
+There is one user-facing function, `get_dataset_pkgs()`. Call it without any arguments to get a data frame of packages that probably have datasets in them.
+
+By default, the data will also be shown in a your web browser.
+
+```{r, get_dataset_pkgs_browse, eval = FALSE}
+library(finddatasetpkgs)
+get_dataset_pkgs()                       # show in browser
+```
+
+You can turn this off, if you just want to work with the data frame programmatically.
+
+```{r, get_dataset_pkgs_program, result = "asis"}
+library(finddatasetpkgs)
+pkgs <- get_dataset_pkgs(browse = FALSE) # don't show
+knitr::kable(head(pkgs))
+```
+
