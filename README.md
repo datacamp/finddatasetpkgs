@@ -38,12 +38,9 @@ knitr::kable(head(pkgs))
 |    |pkgname                   |description                                                                                  |
 |:---|:-------------------------|:--------------------------------------------------------------------------------------------|
 |142 |agridat                   |Agricultural Datasets                                                                        |
-|233 |AnalyzeFMRI               |Functions for analysis of fMRI datasets stored in the ANALYZE or
-NIFTI format                |
-|293 |aplore3                   |Datasets from Hosmer, Lemeshow and Sturdivant, "Applied Logistic
-Regression" (3rd Ed., 2013) |
+|233 |AnalyzeFMRI               |Functions for analysis of fMRI datasets stored in the ANALYZE or NIFTI format                |
+|293 |aplore3                   |Datasets from Hosmer, Lemeshow and Sturdivant, "Applied Logistic Regression" (3rd Ed., 2013) |
 |301 |AppliedPredictiveModeling |Functions and Data Sets for 'Applied Predictive Modeling'                                    |
-|305 |aprean3                   |Datasets from Draper and Smith "Applied Regression Analysis"
-(3rd Ed., 1998)                 |
+|305 |aprean3                   |Datasets from Draper and Smith "Applied Regression Analysis" (3rd Ed., 1998)                 |
 |328 |archdata                  |Example Datasets from Archaeological Research                                                |
 

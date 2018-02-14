@@ -20,6 +20,7 @@ utils::globalVariables(".")
 #' @importFrom rvest html_table
 #' @importFrom stats setNames
 #' @importFrom stringr str_detect
+#' @importFrom stringr str_replace_all
 #' @importFrom stringr regex
 #' @importFrom utils browseURL
 #' @importFrom withr with_output_sink
@@ -44,6 +45,9 @@ get_dataset_pkgs <- function(browse = TRUE, repos = getOption("repos")["CRAN"]) 
     extract(
       str_detect(.$description, regex("data ?set", ignore_case = TRUE)),
     )
+  pkgs_with_datasets$description <- str_replace_all(
+    pkgs_with_datasets$description, regex("\\s"), " "
+  )
 
   if(browse) {
     pkgs_with_datasets$pkgname <- make_link(pkgs_with_datasets$pkgname)
